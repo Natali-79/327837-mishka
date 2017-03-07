@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
-</html>
+	<html lang="ru">
+	<head>
+		<meta charset="8-utf">
+		<title>Мишка - интернет-магазин вязанных изделий</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header class="header">
+				<h1 class="header__logo-h hidden">
+					Мишка
+				</h1>
+				<img class="header__logo-img" src="logo.png" alt="Мишка">
+				<nav class="header__nav-burger">
+					<ul class="top-menu">
+						<li class="top-menu__item">
+							<a href="#" class="top-menu__link">Пункт меню 1</a>
+						</li>
+						<li class="top-menu__item">
+							<a href="#" class="top-menu__link">Пункт меню 2</a>
+						</li>
+						<li class="top-menu__item">
+							<a href="#" class="top-menu__link">Пункт меню 3</a>
+						</li>
+						<li class="top-menu__item">
+							<a href="#" class="top-menu__link">Пункт меню 4</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class="section-product">
+				<header class="section-product__header">
+					<h2 class="section-product__h2">Милые штучки своими руками</h2>
+				</header>
+				<ul class="section-product__menu">
+					<li class="section-product_item">
+						<a href="#" class="section-product_link">Предметы интерьера</a>
+					</li>
+					<li class="section-product_item">
+						<a href="#" class="section-product_link">Детские игрушки</a>
+					</li>
+				</ul>
+			</section>
+			<section class="section-main-product">
+				<header class="section-main-product__header">
+					<h2 class="section-main-product__name">Вязяные корзинки</h2>
+					<a href="#" class="section-main-product__link">Товар недели</a>
+				</header>
+				<article class="section-main-product__description">
+					<p>Экологически чистая пряжа, ручная работа. Доступна в шести расцветках и трех размерах.</p>
+					<table class="section-main-product__feature">
+						<tr>
+							<td class="section-main-product__item-first">
+								Цвет:
+							</td>
+							<td class="section-main-product__item-last">
+								&laquo;Тиффани&raquo;/серый
+							</td>
+						</tr>
+						<tr>
+							<td class="section-main-product__item-first">
+								Диаметр:
+							</td>
+							<td class="section-main-product__item-last">
+								25 см
+							</td>
+						</tr>
+						<tr>
+							<td class="section-main-product__item-first">
+								Высота:
+							</td>
+							<td class="section-main-product__item-last">
+								15 см
+							</td>
+						</tr>
+					</table>
+					<figure class="section-main-product_photo">
+						<img src="http://placehold.it/150x100" alt="Фото товара">
+					</figure>
+					<div class="block-button">
+						<a href="#" class="block-button__button">Заказать</a>
+					</div>
+				</article>
+			</section>
+			<div class="block-about-us">
+				<h2 class="header-for-blocks">Коротко о нас:</h2>
+				<ul class="block-about-us__list">
+					<li class="block-about-us__item">
+						<img class="block-about-us__image" src="image.png">
+						Экологически чистые материалы
+					</li>
+					<li class="block-about-us__item">
+						<img class="block-about-us__image" src="image.png">
+						Скандинавский стиль по российской цене
+					</li>
+					<li class="block-about-us__item">
+						<img class="block-about-us__image" src="image.png">
+						Увеличивает лайки на фотографиях
+					</li>
+					<li class="block-about-us__item">
+						<img class="block-about-us__image" src="image.png">
+						Связано вручную с любовью и уилением
+					</li>
+					<li class="block-about-us__item">
+						<img class="block-about-us__image" src="image.png">
+						Поддерживает отечественного производителя
+					</li>
+					<li class="block-about-us__item">
+						<img class="block-about-us__image" src="image.png">
+						Поставляется в подарочной упаковке
+					</li>
+				</ul>
+			</div>
+			<div class="slider-comment">
+				<h2 class="header-for-blocks">Отзывы</h2>
+				<div class="slider-comment__slider">
+					<div class="comment">
+						<article class="comment__text">
+							<div class="comment__content">
+								Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянье я накупилм аксессуаров и игрушек в Мишке, и мои фоторафии сразу стали более стильными, а также набирают больше лайков.
+							</div>
+							<footer class="comment__footer">
+								<p class="comment__responded">Анастасия Красильникова</p>
+								<p class="comment__nikname">@missssssiskras</p>
+							</footer>
+						</article>
+					</div>
+					<ul class="slider-comment__buttons">
+						<li class="slider-comment__button">
+							<a href="#" class="slider-comment__prev"></a>
+						</li>
+						<li class="slider-comment__button">
+							<a href="#" class="slider-comment__next"></a>
+						</li>
+					</ul>
+					<div class="block-button">
+						<a href="#" class="block-button__button">Оставить отзыв</a>
+					</div>
+				</div>
+			</div>
+			<div class="contact">
+				<h2 class="contact-header">Контакты</h2>
+				<table class="contact__list">
+					<tr>
+						<td class="contact__view">Email</td>
+						<td class="contact__mail"></td>
+					</tr>
+					<tr>
+						<td class="contact__view">Адрес</td>
+						<td class="contact__address"></td>
+					</tr>
+				</table>
+				<div class="contact__map"></div>
+			</div>
+			<footer class="footer">
+				<ul class="social-network">
+					<li class="social-network__item">
+						<a href="social-network__link"><img src="network.png"></a>
+					</li>
+					<li class="social-network__item">
+						<a href="social-network__link"><img src="network.png"></a>
+					</li>
+					<li class="social-network__item">
+						<a href="social-network__link"><img src="network.png"></a>
+					</li>
+				</ul>
+				<div class="footer__autor">
+					<p>Разработано</p>
+					<a href="#" class="footer__autor-logo"><img class="footer__logo-img" src=""></a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>	
