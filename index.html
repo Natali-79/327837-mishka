@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 	<html lang="ru">
 	<head>
-		<meta charset="8-utf">
+		<meta charset="utf-8">
 		<title>Мишка - интернет-магазин вязанных изделий</title>
 	</head>
-	<body>
-		<div class="wrap">
-			<header class="header">
-				<h1 class="header__logo-h hidden">
+	<body class="page">
+		<header class="header">
+			<div class="header__logo">
+				<h1 class="header__logo-title hidden">
 					Мишка
 				</h1>
 				<img class="header__logo-img" src="logo.png" alt="Мишка">
-				<nav class="header__nav-burger">
-					<ul class="top-menu">
-						<li class="top-menu__item">
-							<a href="#" class="top-menu__link">Пункт меню 1</a>
+			</div>
+			<nav class="main-menu">
+				<button type="button" class="main-menu__burger main-menu__burger--closed"></button>
+				<div class="main-menu__wrapper-items">
+					<ul class="main-menu__items">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">Каталог товаров</a>
 						</li>
-						<li class="top-menu__item">
-							<a href="#" class="top-menu__link">Пункт меню 2</a>
-						</li>
-						<li class="top-menu__item">
-							<a href="#" class="top-menu__link">Пункт меню 3</a>
-						</li>
-						<li class="top-menu__item">
-							<a href="#" class="top-menu__link">Пункт меню 4</a>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">Вязание на заказ</a>
 						</li>
 					</ul>
-				</nav>
-			</header>
+					<ul class="main-menu__group-items">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link main-menu__search">Поиск по сайту</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link main-menu__cart">Корзина: пока пуста</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 			<section class="section-product">
 				<header class="section-product__header">
-					<h2 class="section-product__h2">Милые штучки своими руками</h2>
+					<h2 class="section-product__title">Милые штучки своими руками</h2>
 				</header>
 				<ul class="section-product__menu">
-					<li class="section-product_item">
-						<a href="#" class="section-product_link">Предметы интерьера</a>
+					<li class="section-product__item">
+						<a href="/interior-items/" class="section-product__link section-product__link--left-green">Предметы интерьера</a>
 					</li>
 					<li class="section-product_item">
-						<a href="#" class="section-product_link">Детские игрушки</a>
+						<a href="/kids-toys/" class="section-product__link section-product__link--right-green">Детские игрушки</a>
 					</li>
 				</ul>
 			</section>
+		</header>
+		<div class="main">				
 			<section class="section-main-product">
 				<header class="section-main-product__header">
 					<h2 class="section-main-product__name">Вязяные корзинки</h2>
@@ -74,11 +81,14 @@
 							</td>
 						</tr>
 					</table>
-					<figure class="section-main-product_photo">
+					<figure class="section-main-product__photo">
 						<img src="http://placehold.it/150x100" alt="Фото товара">
+						<figcaption class="section-main-product__description">
+							<p class="section-main-product__cost">Цена: 990 руб.</p>
+						</figcaption>
 					</figure>
-					<div class="block-button">
-						<a href="#" class="block-button__button">Заказать</a>
+					<div class="block-buttons">
+						<a href="#modal" class="block-buttons__button">Заказать</a>
 					</div>
 				</article>
 			</section>
@@ -112,7 +122,7 @@
 				</ul>
 			</div>
 			<div class="slider-comment">
-				<h2 class="header-for-blocks">Отзывы</h2>
+				<h2 class="slider-comment__title">Отзывы</h2>
 				<div class="slider-comment__slider">
 					<div class="comment">
 						<article class="comment__text">
@@ -121,7 +131,7 @@
 							</div>
 							<footer class="comment__footer">
 								<p class="comment__responded">Анастасия Красильникова</p>
-								<p class="comment__nikname">@missssssiskras</p>
+								<p class="comment__nikname">@misssssiskras</p>
 							</footer>
 						</article>
 					</div>
@@ -133,8 +143,8 @@
 							<a href="#" class="slider-comment__next"></a>
 						</li>
 					</ul>
-					<div class="block-button">
-						<a href="#" class="block-button__button">Оставить отзыв</a>
+					<div class="block-buttons">
+						<a href="#" class="block-buttons__button">Оставить отзыв</a>
 					</div>
 				</div>
 			</div>
@@ -143,32 +153,41 @@
 				<table class="contact__list">
 					<tr>
 						<td class="contact__view">Email</td>
-						<td class="contact__mail"></td>
+						<td class="contact__mail"><a href="mailto:info@mimimishkashop.ru" class="mail-link mail-link--hover">info@mimimishkashop.ru</a></td>
 					</tr>
 					<tr>
 						<td class="contact__view">Адрес</td>
-						<td class="contact__address"></td>
+						<td class="contact__address"><p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис. 101</p></td>
 					</tr>
 				</table>
 				<div class="contact__map"></div>
 			</div>
-			<footer class="footer">
-				<ul class="social-network">
-					<li class="social-network__item">
-						<a href="social-network__link"><img src="network.png"></a>
-					</li>
-					<li class="social-network__item">
-						<a href="social-network__link"><img src="network.png"></a>
-					</li>
-					<li class="social-network__item">
-						<a href="social-network__link"><img src="network.png"></a>
-					</li>
-				</ul>
-				<div class="footer__autor">
-					<p>Разработано</p>
-					<a href="#" class="footer__autor-logo"><img class="footer__logo-img" src=""></a>
-				</div>
-			</footer>
+		</div>
+		<footer class="footer">
+			<ul class="social">
+				<li class="social__item">
+					<a href="social__link"><img src="network.png"></a>
+				</li>
+				<li class="social__item">
+					<a href="social__link"><img src="network.png"></a>
+				</li>
+				<li class="social__item">
+					<a href="social__link"><img src="network.png"></a>
+				</li>
+			</ul>
+			<div class="footer__copyright">
+				<p>Разработано</p>
+				<a href="#" class="footer__copyright-logo"><img class="footer__copyright-img" src=""></a>
+			</div>
+		</footer>
+		<div class="modal">
+			<h2 class="modal__title">Добавить в корзину</h2>
+			<p>Выберите размер:</p>
+			<ul class="size-group">
+				<li class="size-group__item"><a href="#" class="size-select size-select--hover">S</a></li>
+				<li class="size-group__item"><a href="#" class="size-select">M</a></li>
+				<li class="size-group__item"><a href="#" class="size-select">L</a></li>
+			</ul>
 		</div>
 	</body>
 </html>	
