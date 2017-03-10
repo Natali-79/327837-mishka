@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+	<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Каталог изделий</title>
+	</head>
+	<body class="page">
+		<header class="header">
+			<div class="header__logo">
+				<a href="/" class="header__link">
+					<h1 class="header__logo-title hidden">
+					Мишка
+					</h1>
+					<img class="header__logo-img" src="logo.png" alt="Мишка">
+				</a>
+			</div>
+			<nav class="main-menu">
+				<button type="button" class="main-menu__burger main-menu__burger--closed"></button>
+				<div class="main-menu__wrapper-items">
+					<ul class="main-menu__items">
+						<li class="main-menu__item">
+							<a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="form.html" class="main-menu__link">Вязание на заказ</a>
+						</li>
+					</ul>
+					<ul class="main-menu__group-items">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link main-menu__search">Поиск по сайту</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="/purchase/" class="main-menu__link main-menu__cart">Корзина: пока пуста</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="main-header">
+				<h2 class="main-header__title">Каталог товаров</h2>
+			</div>
+		</header>			
+		<div class="main">
+			<ul class="catalog">
+				<li class="catalog__unit">
+					<a href="#" class="product">
+						<figure class="product__info">
+							<img src="http://placehold.it/150x100" alt="Фото товара" class="product__image">
+							<figcaption class="product__description">
+								<h3 class="product__name">Зайчик-попрыгачик</h3>
+							</figcaption>					
+						</figure>
+					</a>
+					<p class="product__feature">Рост 30см, вес 30 г.</p>
+					<div class="product__purchase">
+						<span class="product__cost">1200 руб.</span>
+						<a href="#modal" class="product__cart"><img alt="basket.png"></a>
+					</div>					
+				</li>
+				<li class="catalog__unit">
+					<a href="#" class="product">
+						<figure class="product__info">
+							<img src="http://placehold.it/150x100" alt="Фото товара" class="figure__image">
+							<figcaption class="product__description">
+								<h3 class="product__name">Корзинка для белья</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<p class="product__feature">Диаметр 15 см, высота 10 см</p>
+					<div class="product__purchase">
+						<span class="product__cost">690 руб.</span>
+						<a href="#modal" class="product__cart"><img alt="basket.png"></a>
+					</div>					
+				</li>
+				<li class="catalog__unit">
+					<a href="#" class="product">
+						<figure class="product__info">
+							<img src="http://placehold.it/150x100" alt="Фото товара" class="figure__image">
+							<figcaption class="product__description">
+								<h3 class="product__name">Большая корзинка для игрушек</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<p class="product__feature">Диаметр 30 см, высота 30 см</p>
+					<div class="product__purchase">
+						<span class="product__cost">1500 руб.</span>
+						<a href="#modal" class="product__cart"><img alt="basket.png"></a>
+					</div>					
+				</li>
+				<li class="catalog__unit">
+					<div class="video">
+						<figure class="video__figure">	
+							<img src="preview" class="video__image-preview">
+							<a href="video" class="video__play">
+								<span class="video__image-play"></span>
+							</a>
+							<figcaption class="product__description">
+								<h3 class="product__name">Корзинка для белья</h3>
+							</figcaption>
+						</figure>
+					</div>
+					<p class="product__feature">По просьбам наших любимых фоллаверов мы нсяли для вас подробное виде о том как появляются наши товары.</p>
+					<div class="block-button">
+						<a href="#" class="block-button__button">Сделать заказ</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<footer class="footer">
+			<ul class="social">
+				<li class="social__item">
+					<a href="social__link"><img src="network.png"></a>
+				</li>
+				<li class="social__item">
+					<a href="social__link"><img src="network.png"></a>
+				</li>
+				<li class="social__item">
+					<a href="social__link"><img src="network.png"></a>
+				</li>
+			</ul>
+			<div class="footer__copyright">
+				<p>Разработано</p>
+				<a href="http://htmlacademy.ru/" class="footer__copyright-logo"><img class="footer__copyright-img" src="logo.png"></a>
+			</div>
+		</footer>
+		<div class="modal">
+			<h2 class="modal__title">Добавить в корзину</h2>
+			<p>Выберите размер:</p>
+			<ul class="size-group">
+				<li class="size-group__item"><a href="#" class="size-select size-select--hover">S</a></li>
+				<li class="size-group__item"><a href="#" class="size-select">M</a></li>
+				<li class="size-group__item"><a href="#" class="size-select">L</a></li>
+			</ul>
+		</div>
+	</body>
+</html>	
