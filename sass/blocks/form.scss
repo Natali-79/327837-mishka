@@ -1,0 +1,50 @@
+.form__group {
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid $color-leftgreen;
+	margin-top: 25px;
+}
+.form__title {	
+	font-family: $font-bold;
+	font-size: 1.2em;
+	padding-right: 25px;
+	text-transform: uppercase;
+}
+.form__title--blue {
+	color: $color-leftgreen;
+}
+.form__block label {
+	color: $color-black;	
+	font-family: $font-bold;
+}
+.form__block.custom-text label {
+	display: block;
+}
+.form__input-text, .form__phone, .form__email {
+	border-bottom: 1px solid $color-black;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	padding: 15px 0;
+}
+.form__textarea {
+	border: 1px solid $color-black;
+	padding: 15px;
+}
+.form__submit {
+	background: $color-white;
+	border: 1px solid $color-greyButton;
+	box-shadow: none;
+	color: $color-greyButton;
+	display: block;	
+	font-family: $font-bold;
+	padding: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.form__submit:hover {
+	background: $color-white;
+	border: 1px solid $color-greyButton;
+	box-shadow: none;
+}

@@ -1,0 +1,15 @@
+.section-main-product__header {
+	padding: 30px 0;
+}
+.section-main-product__name {
+	color: $color-black;
+	font-size: 2em;
+	font-family: $font-bold;
+}
+.section-main-product__link {	
+	text-transform: uppercase;
+}
+.section-main-product__feature	td {
+	border-bottom: 1px solid $color-lightgrayBorder;
+}
+	

@@ -1,0 +1,38 @@
+* 
+{
+	margin: 0;
+	padding: 0;
+}	
+html {
+	color: $color-greyButton;
+	font-family: $font-regular;
+	font-size: 16px;
+	line-height: 1.5;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+	display: block;
+}
+a {
+	color: $color-greyButton;
+	text-decoration: none;
+}
+table {
+	border-collapse: collapse;
+	border: none;
+}
+input, textarea, keygen, select, button {
+	font-family: $font-regular;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.hidden {
+  display: none;
+}

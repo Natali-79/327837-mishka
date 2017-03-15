@@ -1,0 +1,14 @@
+.modal {
+	background: $color-whiteOpacity;
+}
+.modal__item {
+	background: $color-white;
+	padding: 25px;
+}
+.modal__title {
+	color: $color-black;
+	font-family: $font-bold;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+}

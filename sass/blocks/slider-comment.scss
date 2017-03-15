@@ -1,0 +1,23 @@
+.slider-comment {
+	padiing-top: 25px;
+}
+.slider-comment__title {
+	color: $color-black;
+	font-family: $font-bold;
+	font-size: 2em;
+	margin-bottom: 25px;
+}
+.slider-comment__buttons {
+	border: 1px solid $color-lightgrayBorder;
+	list-style-type: none;
+}
+.slider-comment__button {
+	display: block;
+}
+.slider-comment__prev, .slider-comment__next {
+	display: block;
+	padding: 20px;
+}
+.slider-comment__prev {
+	border-right: 1px solid $color-lightgrayBorder;
+}

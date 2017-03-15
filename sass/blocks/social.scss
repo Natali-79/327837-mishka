@@ -1,0 +1,13 @@
+.social {
+	border-bottom: 1px solid $color-lightgrayBorder;
+	list-style-type: none;
+	padding: 0 40px;
+}
+.social__item {
+	display: inline-block;
+}
+.social__link {
+	display: block;
+	padding: 10px;
+}
+	
