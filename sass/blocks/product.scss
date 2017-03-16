@@ -1,27 +1,29 @@
 .product {
 	display: block;
-	float: left;
 	.product__image {
 		margin-bottom: 25px;
 	}
 	.product__name {
 		color: $color-black;	
-		font-size: 1.5em;
+		font-size: 17px;
 		font-family: $font-bold;
 	}
 }
-.product__feature {margin-bottom: 25px;}
+.product__feature {
+	font-size: 13px;
+	margin-bottom: 25px;
+}
 .product__purchase {
 	border-bottom: 1px solid $color-lightgrayBorder;
 	padding-top: 25px;
 	.product__cost {
 		color: $color-black;
-		font-family: $font-bold;
+		font-family: $font-bold;		
 	}
 	.product__cart {
-		display: block;
+		margin-left: 25px;
 	}
 	svg {
-		fill: $color-greyIcon;
+		fill: $color-greyIcon;		
 	}
 }

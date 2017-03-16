@@ -1,18 +1,15 @@
 .slider-comment {
 	padiing-top: 25px;
 }
-.slider-comment__title {
-	color: $color-black;
-	font-family: $font-bold;
-	font-size: 2em;
-	margin-bottom: 25px;
-}
 .slider-comment__buttons {
 	border: 1px solid $color-lightgrayBorder;
 	list-style-type: none;
+	margin-bottom: 25px;
+	width: 100%
 }
 .slider-comment__button {
-	display: block;
+	display: inline-block;
+    width: 49.5%;
 }
 .slider-comment__prev, .slider-comment__next {
 	display: block;
