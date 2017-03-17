@@ -1,0 +1,29 @@
+@import "global/fonts.scss";
+@import "global/colors.scss";
+@import "normalize.scss";
+ /*blocks*/
+@import "blocks/page.scss"; 
+@import "blocks/header.scss";
+@import "blocks/main-menu.scss";
+
+@import "blocks/block-about-us.scss";
+@import "blocks/block-buttons.scss";
+@import "blocks/catalog.scss";
+@import "blocks/comment.scss";
+@import "blocks/contact.scss";
+@import "blocks/footer.scss";
+@import "blocks/form.scss";
+
+@import "blocks/header-for-blocks.scss";
+@import "blocks/main.scss";
+@import "blocks/main-header.scss";
+
+@import "blocks/modal.scss";
+
+@import "blocks/product.scss";
+@import "blocks/section-main-product.scss";
+@import "blocks/section-product.scss";
+@import "blocks/size-group.scss";
+@import "blocks/slider-comment.scss";
+@import "blocks/social.scss";
+@import "blocks/video.scss";

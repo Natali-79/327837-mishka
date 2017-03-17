@@ -1,0 +1,20 @@
+.footer {
+	background-color: $color-lightgrayFon;
+	margin-top: 25px;	
+	padding: 25px;
+}
+.footer__copyright {
+	margin-top: 25px;
+	text-align: center;
+	p {
+		color: $color-black;
+		font-family: $font-bold;
+		font-size: 19px;
+	}
+}
+.footer__copyright-logo {
+	svg {
+		fill: $color-leftgreen;
+		margin-left: 25px;
+	}
+}

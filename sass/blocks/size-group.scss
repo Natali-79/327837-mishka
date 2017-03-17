@@ -1,0 +1,14 @@
+.size-group {
+	list-style-type: none;
+}
+.size-group__item {
+	display: inline-block;
+	margin: 0 10px;
+}
+.size-select {
+	border: 1px solid $color-lightgrayBorder;
+	padding: 15px 20px;
+}
+.size-select--hover {
+	border: 1px solid $color-greenBorder;
+}

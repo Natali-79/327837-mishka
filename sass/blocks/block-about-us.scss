@@ -1,0 +1,18 @@
+.block-about-us {
+	padiing-top: 25px;
+}
+.block-about-us__list {
+	list-style-type: none;
+}
+.block-about-us__item {
+	margin-bottom: 25px;
+	svg {
+		fill: $color-leftgreen;
+		margin-bottom: 10px;
+	}
+	p {
+		color: $color-black;
+		font-size: 17px;
+		font-family: $font-bold;
+	}
+}
