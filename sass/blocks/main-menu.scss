@@ -1,14 +1,19 @@
 .main-menu {
-  padding-top: 40px;
-  position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+	position: absolute;
+	width: 100%;
 }
 .main-menu__burger {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  float: right;
-  height: 20px;
-  width: 20px; 
+	align-self: flex-end;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	height: 30px;
+	margin-bottom: 30px;
+	margin-right: 25px;
+	width: 20px; 
  }
 .main-menu__burger--open {
   background: url(../img/icon-menu-open.svg) center center no-repeat; 
@@ -17,26 +22,106 @@
   background: url(../img/icon-menu-close.svg) center center no-repeat; 
 }
 .main-menu__wrapper-items {
-  background-color: $color-white; 
+  background-color: $color-white;
+  flex-direction: column;
 }
-.main-menu__items, .main-menu__group-items {
+.main-menu__items1, .main-menu__items2, .main-menu__items3 {
   list-style-type: none; 
- }
-.main-menu__item {
+}
+.main-menu__item, .main-menu__item:first-child {
   border-bottom: 1px solid $color-greyBorder; 
 }
 .main-menu__link {
   color: $color-black;
   display: block;
-  padding: 25px 25px 25px 60px;
+  @include font($font-bold, 17px);
 }
+.main-menu__items1 .main-menu__link {
+	padding: 25px 25px 25px 60px;
+}
+.main-menu__items2 .main-menu__link {
+	padding: 25px;
+}	
 .main-menu__link:hover {
   color: $color-gray; 
 }
-.main-menu__link:visited {
+.main-menu__link:focus {
   color: $color-lightgray; 
  }
-.main-menu--search use, .main-menu--cart {
-  fill: $color-lightgreyIcon; 
+.main-menu__search, .main-menu__cart {
+  fill: $color-lightgreyIcon;
+  margin-right: 15px;  
+ }
+ 
+ @media #{$width-tablet} {
+	.main-menu {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+		position: absolute;		
+	}
+	.main-menu__burger {
+		display: none; 
+	 }
+	.main-menu__wrapper-items {
+	  align-items: flex-end;
+	  background-color: transparent;
+	  display: flex;
+	  flex-direction: column-reverse;	 
+	}
+	.main-menu__item, .main-menu__item:first-child {
+	  border-bottom: none;
+	}
+	.main-menu__link {
+	  color: $color-black;
+	  display: block;
+	  @include font($font-bold, 17px);
+	}
+	.main-menu__items1 {
+		align-self: flex-start;
+		display: flex;
+		padding-left: 50px;
+		.main-menu__link {
+		  @include font($font-bold, 15px);
+		  padding: 20px 25px 20px 0;
+		}
+	} 
+	.main-menu__items2 {
+		display: flex;
+		padding-right: 50px;
+		.main-menu__item {
+			border-left: 1px solid $color-greyBorder;
+		}
+		.main-menu__link {
+			@include font($font-bold, 17px);
+			padding: 28px;
+		}
+	}
+	.main-menu__link.main-menu__link--padding {	
+		padding-right: 0;
+	}
+	.main-menu__items3 {
+		margin-top: -45px;			
+		order: -1;
+		padding-right: 50px;
+		.main-menu__link {
+			@include font();
+		}
+	}	
+	.main-menu__link:hover {
+	  color: $color-gray; 
+	}
+	.main-menu__link:visited {
+	  color: $color-lightgray; 
+	}
+	.main-menu__search {
+		margin-right: 0; 
+	}
+	.main-menu__cart {
+		margin-right: 28px; 
+	}
+	.main-menu__search + span {
+		display: none;
+	}
  }
 

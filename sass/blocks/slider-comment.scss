@@ -2,13 +2,13 @@
 	padiing-top: 25px;
 }
 .slider-comment__buttons {
+	display: flex;
 	border: 1px solid $color-lightgrayBorder;
+	justify-content: center;
 	list-style-type: none;
 	margin-bottom: 25px;
-	width: 100%
 }
 .slider-comment__button {
-	display: inline-block;
     width: 49.5%;
 }
 .slider-comment__prev, .slider-comment__next {
@@ -17,4 +17,42 @@
 }
 .slider-comment__prev {
 	border-right: 1px solid $color-lightgrayBorder;
+}
+
+@media #{$width-tablet} {
+	.slider-comment {
+		background: url(../img/review@1x.jpg) 0 0 no-repeat;
+		margin-left: -50px;
+		padding-top: 50px;
+		padding-left: 50px;
+		
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}	
+	.slider-comment__slider {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		order: 1;
+	}
+	.slider-comment__buttons {
+		display: flex;
+		border: 1px solid $color-lightgrayBorder;
+		justify-content: center;
+		list-style-type: none;
+		margin-bottom: 25px;
+	}
+	.slider-comment__button {
+		width: 49.5%; 
+	}
+	.slider-comment__prev, .slider-comment__next {
+		display: block;
+		padding: 20px; 
+	}
+	.slider-comment__prev {
+		border-right: 1px solid $color-lightgrayBorder; 
+	}
 }
