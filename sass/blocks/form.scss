@@ -80,13 +80,17 @@
 	padding: 15px;
 	width: 100%;
 }
+.form__footnote {
+	@include font($font-regular, 14px, 16px);
+	margin-bottom: 30px;
+}
 .form__submit {
 	background: $color-white;
 	border: 1px solid $color-greyButton;
 	box-shadow: none;
 	color: $color-greyButton;
-	display: block;	
-	font-family: $font-bold;
+	display: block;
+	@include font($font-regular, 17px, 16px);
 	padding: 25px;
 	text-align: center;
 	text-transform: uppercase;
@@ -98,16 +102,27 @@
 	box-shadow: none;
 }
 @media #{$width-tablet} {
-	.form__group {
-		border: none;
+	.form {
+		padding: 0;
 	}
-	fieldset:nth-child(1) {
-		padding: 50px 0;
-		.form__group-wrapper {
-			flex-wrap: wrap;
-		}
+	.form__description, .form__group {
+		border: none;
+		margin-right: 0;
+		padding: 50px;
+	}
+	fieldset:nth-of-type(4), fieldset:nth-of-type(5) {
+		background: $color-lightgrayFon;
+	}
+	fieldset:nth-of-type(4){
+		padding-bottom: 0;
+	}
+	fieldset:nth-of-type(2) {		
+		background: $color-lightgrayFon;
 		.custom-checkbox {
 			margin-right: 50px;
+		}
+		.form__wrapper-checkbox {
+			display: flex;
 		}
 	}
 	.form__group-wrapper {
@@ -118,5 +133,50 @@
 	}
 	.form__block-wrapper {
 		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.form__wrapper-checkbox .form__block-wrapper {
+		width: auto;
+	}
+	.custom-text {
+		display: flex;
+		label {
+			margin-right: 20px;
+		}
+	}
+	.form__phone, .form__email {
+		background: transparent;
+	}
+	.form__submit-wrapper {
+		align-items: center;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;    
+		padding: 0 50px 50px;
+	}
+	.form__description {
+		@include font($font-regular, 17px, 30px);
+		margin-bottom: 0;
+	}
+	.form__block label {
+		@include font($font-bold, 19px, 18px);
+	}
+	.form__submit {
+		@include font($font-regular, 17px, 16px);
+		padding: 10px 30px;
+	}
+}
+@media #{$width-desktop} {
+	.form__wrapper-checkbox {
+		flex-wrap: wrap;
+		.form__block-wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+		}
+		.custom-checkbox {
+			width: 33.333%;
+		}
 	}
 }
