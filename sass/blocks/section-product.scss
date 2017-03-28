@@ -40,9 +40,10 @@
 	background-color: $color-rightgreenHover;
 }
 
-@media (min-width: 768px) {		
+@media #{$width-tablet} {		
 	.section-product {
 		border-bottom: 1px solid $color-greyBorder;
+		border-top: 1px solid $color-greyBorder;
 		width: 100%; 
 	}
 	.section-product__header {
@@ -52,7 +53,7 @@
 		padding-top: 105px; 
 	}
 	.section-product__title {
-		color: #000;
+		color: $color-black;
 		@include font($font-bold, 47px, 50px);		
 		text-align: center; 
 	}	
@@ -68,4 +69,14 @@
 	.section-product__link {
 		height: 100px; 
 	}
+}
+
+@media #{$width-desktop} {		
+	.section-product__header {
+		height: 600px;
+		padding-top: 170px; 
+	}
+	.section-product__title {
+		@include font($font-bold, 53px, 57px);		
+	}	
 }	

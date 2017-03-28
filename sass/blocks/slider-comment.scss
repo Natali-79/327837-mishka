@@ -1,6 +1,13 @@
 .slider-comment {
 	padiing-top: 25px;
 }
+.slider-comment__text {
+	margin-bottom: 25px;
+}
+.slider-comment__responded {
+	color: $color-black;
+	@include font($font-bold, 17px);
+}
 .slider-comment__buttons {
 	display: flex;
 	border: 1px solid $color-lightgrayBorder;
@@ -21,15 +28,12 @@
 
 @media #{$width-tablet} {
 	.slider-comment {
-		background: url(../img/review@1x.jpg) 0 0 no-repeat;
-		margin-left: -50px;
-		padding-top: 50px;
-		padding-left: 50px;
-		
+		background: url(../img/review@1x.jpg) 0 0 no-repeat;		
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		padding: 50px 0 0 50px;
 	}	
 	.slider-comment__slider {
 		display: flex;
@@ -54,5 +58,10 @@
 	}
 	.slider-comment__prev {
 		border-right: 1px solid $color-lightgrayBorder; 
+	}
+}
+@media #{$width-desktop} {
+	.slider-comment__slider {
+		margin-left: 170px;
 	}
 }

@@ -1,5 +1,5 @@
 .block-about-us {
-	padiing-top: 25px;
+	padding: 25px 25px 0;
 }
 .block-about-us__wrapper {
 	display: flex;
@@ -30,10 +30,23 @@
 
 @media #{$width-tablet} {	
 	.block-about-us {
-		padding-top: 50px; 
+		padding: 50px 50px 0; 
 	}	
 	.block-about-us__wrapper {
 		flex-direction: row;
+	}
+	.block-about-us__item {
+		margin: 0 25px 50px 0; 
+		p {
+			font-size: 20px;
+			line-height: 22px; 
+		}
+	}
+}
+@media #{$width-desktop} {	
+	.block-about-us__wrapper {
+		flex-direction: row;
+		margin-left: 170px;
 	}
 	.block-about-us__item {
 		margin: 0 25px 50px 0; 

@@ -1,7 +1,10 @@
 .form {
-	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
 }
 .form__description {
+	@include font($font-regular, 13px);
 	margin-bottom: 25px;
 }
 .form__group {
@@ -9,12 +12,11 @@
 	border-left: none;
 	border-right: none;
 	border-top: 1px solid $color-leftgreen;
-	padding: 25px 0;
+	margin-right: 30px;
+	padding: 30px 0;
 }
 .form__title {	
-	font-family: $font-bold;
-	font-size: 17px;
-	padding-right: 25px;
+	@include font($font-bold, 17px, 16px);
 	text-transform: uppercase;
 }
 .form__title--blue {
@@ -28,11 +30,41 @@
 }
 .form__block label {
 	color: $color-black;	
-	font-family: $font-bold;
-	font-size: 17px;
+	@include font($font-bold, 17px, 18px);
 	margin-bottom: 10px;
 }
-.form__block.custom-text label {
+.form__radio, .form__checkbox  {
+	display: none;
+}
+.custom-radio label:before {
+	content: " ";
+	border: 10px solid $color-white;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px $color-gray;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.form__radio:checked + label:before {
+    background: $color-leftgreen;
+    box-shadow: 0 0 0 2px $color-leftgreen;
+}
+.custom-checkbox label:before {
+	content: " ";
+	border: 2px solid $color-gray;
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.form__checkbox:checked + label:before {
+    background: url(../img/icon-tick.svg) center center no-repeat;
+    border: 2px solid $color-leftgreen;
+}
+.custom-text label {
 	display: block;
 }
 .form__input-text, .form__phone, .form__email {
@@ -41,10 +73,12 @@
 	border-right: none;
 	border-top: none;
 	padding-bottom: 15px;
+	width: 100%;
 }
 .form__textarea {
 	border: 1px solid $color-black;
 	padding: 15px;
+	width: 100%;
 }
 .form__submit {
 	background: $color-white;
@@ -62,4 +96,27 @@
 	background: $color-white;
 	border: 1px solid $color-greyButton;
 	box-shadow: none;
+}
+@media #{$width-tablet} {
+	.form__group {
+		border: none;
+	}
+	fieldset:nth-child(1) {
+		padding: 50px 0;
+		.form__group-wrapper {
+			flex-wrap: wrap;
+		}
+		.custom-checkbox {
+			margin-right: 50px;
+		}
+	}
+	.form__group-wrapper {
+		display: flex;
+	}
+	.form__title{
+		width: 175px;
+	}
+	.form__block-wrapper {
+		display: flex;
+	}
 }

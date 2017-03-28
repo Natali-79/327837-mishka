@@ -6,7 +6,7 @@
 .header__logo-img {
 	background: url(../img/logo-mobile.svg) left top no-repeat;
 	display: block;
-	height: 40px;
+	height: 40px;	
 	width: 90px;
 }
 .header__logo {
@@ -19,11 +19,26 @@
 	}
 	.header__logo-img {
 		background: url(../img/logo-mobile.svg) left top no-repeat;
+		margin-left: 50px;
 	}
 	.header__logo {
-	  border-bottom: 1px solid $color-greyBorder;
-	  padding: 20px 50px;
-	  width: 100%;
-	  z-index: 2;
+		padding: 20px 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+@media #{$width-desktop} {
+	.header {
+		align-items: center;
+	}
+	.header__logo-img {
+		background: url(../img/logo-mobile.svg) left top no-repeat;
+		margin-left: 0;
+	}
+	.header__logo {
+		border-bottom: none;
+		padding: 20px 0;
+		width: auto;
+		z-index: 2;
 	}
 }

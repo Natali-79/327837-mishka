@@ -5,8 +5,13 @@
 }
 @media #{$width-tablet} {	
 	.header-for-blocks {
-		font-size: 43px;
-		@include font($font-bold, 50px);
+		@include font($font-bold, 43px, 50px);
 		margin-bottom: 50px;
 	}
 }
+@media #{$width-desktop} {	
+	.header-for-blocks {
+		@include font($font-bold, 53px, 57px);
+		margin-left: 170px;
+	}
+}	

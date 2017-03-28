@@ -1,11 +1,19 @@
-.main-header {
-	background-color: $color-lightgrayFon;
-	padding: 70px 25px;
-	text-align: center;
+.section-product__header.main-header {
+	background: $color-lightgrayFon;
+	height: auto;
+	padding: 70px 0;
 }
-.main-header__title {
-	color: $color-black;	
-	font-size: 27px;
-	font-family: $font-bold;
+@media #{$width-tablet} {		
+	.section-product__header.main-header {
+		background: $color-lightgrayFon;
+		height: auto;
+		padding: 100px 0 80px; 
+	}
+}
+
+@media #{$width-desktop} {		
+	.section-product__header.main-header {
+		height: auto;
+	}
 }
 

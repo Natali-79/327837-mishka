@@ -1,20 +1,49 @@
 .footer {
 	background-color: $color-lightgrayFon;
-	margin-top: 25px;	
-	padding: 25px;
-}
-.footer__copyright {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin-top: 25px;
-	text-align: center;
-	p {
-		color: $color-black;
-		font-family: $font-bold;
-		font-size: 19px;
-	}
+	padding: 25px; 
 }
-.footer__copyright-logo {
+.footer__logo {
+	display: none;
+}
+.footer__copyright {  
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	p {
+		color: #000;
+		@include font($font-bold, 19px, 18px);
+	}
 	svg {
 		fill: $color-leftgreen;
-		margin-left: 25px;
+		margin-left: 25px; 
+	}
+}
+
+@media (min-width: 768px) {	
+.footer {
+	background-color: $color-lightgrayFon;
+	flex-direction: row;
+	padding: 50px; 
+}
+.footer__logo {
+	background: url(../img/logo-mobile.svg) 0 0 no-repeat;
+	display: block;
+	height: 45px;
+	width: 33.333%;
+}
+.footer__copyright {  
+	justify-content: flex-end;
+	width: 33.333%;
+	p {
+		color: $color-black;
+		@include font($font-bold, 19px, 18px);
+	}
+	svg {
+		fill: $color-leftgreen;
+		margin-left: 25px; }
 	}
 }
