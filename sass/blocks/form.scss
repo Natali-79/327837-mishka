@@ -3,30 +3,37 @@
 	flex-direction: column;
 	padding: 30px;
 }
-.form__description {
-	@include font($font-regular, 13px);
+.form__description {	
 	margin-bottom: 25px;
+	p {
+		@include font($font-regular, 13px);
+	}
 }
 .form__group {
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-	border-top: 1px solid $color-leftgreen;
-	margin-right: 30px;
-	padding: 30px 0;
+	margin-bottom: 30px;
 }
 .form__title {	
 	@include font($font-bold, 17px, 16px);
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 .form__title--blue {
 	color: $color-leftgreen;
 }
+.form__title p {
+	display: flex;
+    align-items: center;
+}
+.form__title p:after {
+	content: " ";
+	background: $color-leftgreen;
+	display: inline-block;
+	height: 2px;
+	margin-left: 20px;
+	width: 100%;
+}
 .form__block {
 	margin-bottom: 15px;
-}
-.form__group .form__block:last-child {
-	margin-bottom: 0;
 }
 .form__block label {
 	color: $color-black;	
@@ -77,8 +84,8 @@
 }
 .form__textarea {
 	border: 1px solid $color-black;
-	padding: 15px;
-	width: 100%;
+	padding: 4%;
+    width: 92%;
 }
 .form__footnote {
 	@include font($font-regular, 14px, 16px);
@@ -106,17 +113,20 @@
 		padding: 0;
 	}
 	.form__description, .form__group {
-		border: none;
 		margin-right: 0;
 		padding: 50px;
 	}
-	fieldset:nth-of-type(4), fieldset:nth-of-type(5) {
+	.form__group {
+		display: flex;
+	}
+	.form__group:nth-of-type(5), .form__group:nth-of-type(6) {
 		background: $color-lightgrayFon;
 	}
-	fieldset:nth-of-type(4){
+	.form__group:nth-of-type(5){
+		margin-bottom: 0;
 		padding-bottom: 0;
 	}
-	fieldset:nth-of-type(2) {		
+	.form__group:nth-of-type(3) {		
 		background: $color-lightgrayFon;
 		.custom-checkbox {
 			margin-right: 50px;
@@ -124,12 +134,13 @@
 		.form__wrapper-checkbox {
 			display: flex;
 		}
-	}
-	.form__group-wrapper {
-		display: flex;
-	}
+	}	
 	.form__title{
 		width: 175px;
+	}
+	.form__title p:after {
+		height: 0;
+		width: 0;
 	}
 	.form__block-wrapper {
 		display: flex;
@@ -155,17 +166,20 @@
 		justify-content: space-between;    
 		padding: 0 50px 50px;
 	}
-	.form__description {
+	.form__description p {
 		@include font($font-regular, 17px, 30px);
 		margin-bottom: 0;
 	}
 	.form__block label {
 		@include font($font-bold, 19px, 18px);
 	}
+	.form__footnote {
+		margin-bottom: 0;
+	}
 	.form__submit {
 		@include font($font-regular, 17px, 16px);
 		padding: 10px 30px;
-	}
+	}	
 }
 @media #{$width-desktop} {
 	.form__wrapper-checkbox {
@@ -178,5 +192,8 @@
 		.custom-checkbox {
 			width: 33.333%;
 		}
+	}
+	.form__submit-wrapper {
+		padding: 0 50px 50px 200px;
 	}
 }
