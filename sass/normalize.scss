@@ -5,9 +5,7 @@
 }	
 html {
 	color: $color-greyButton;
-	font-family: $font-regular;
-	font-size: 15px;
-	line-height: 1.5;
+	@include font();
 }
 article,
 aside,
@@ -24,14 +22,15 @@ a {
 	color: $color-greyButton;
 	text-decoration: none;
 }
+img {
+	width: 100%
+}
 table {
 	border-collapse: collapse;
 	border: none;
 }
 input, textarea, keygen, select, button {
-	font-family: $font-regular;
-	font-size: 16px;
-	line-height: 1.5;
+	@include font($font-regular, 16px, 24px)
 }
 .hidden {
   display: none;

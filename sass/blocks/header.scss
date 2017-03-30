@@ -1,4 +1,44 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header__logo-img {
+	background: url(../img/logo-mobile.svg) left top no-repeat;
+	display: block;
+	height: 40px;	
+	width: 90px;
+}
 .header__logo {
   padding: 20px 0;
-  text-align: center; 
+}
+
+@media #{$width-tablet} {
+	.header {
+		align-items: flex-start;
+	}
+	.header__logo-img {
+		background: url(../img/logo-mobile.svg) left top no-repeat;
+		margin-left: 50px;
+	}
+	.header__logo {
+		padding: 20px 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+@media #{$width-desktop} {
+	.header {
+		align-items: center;
+	}
+	.header__logo-img {
+		background: url(../img/logo-mobile.svg) left top no-repeat;
+		margin-left: 0;
+	}
+	.header__logo {
+		border-bottom: none;
+		padding: 20px 0;
+		width: auto;
+		z-index: 2;
+	}
 }

@@ -1,6 +1,17 @@
 .header-for-blocks {
 	color: $color-black;
-	font-family: $font-bold;
-	font-size: 25px;
+	@include font($font-bold, 25px);
 	margin-bottom: 25px;
 }
+@media #{$width-tablet} {	
+	.header-for-blocks {
+		@include font($font-bold, 43px, 50px);
+		margin-bottom: 50px;
+	}
+}
+@media #{$width-desktop} {	
+	.header-for-blocks {
+		@include font($font-bold, 53px, 57px);
+		margin-left: 170px;
+	}
+}	

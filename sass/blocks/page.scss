@@ -1,0 +1,19 @@
+.page {
+	min-width: 320px;
+	width: 100%
+}
+
+@media #{$width-tablet} {
+	.page {	
+		min-width: 768px;
+		width: 100%;
+	}
+}
+
+@media #{$width-desktop} {
+	.page {
+		margin: 0 auto;
+		min-width: auto;
+		width: 1150px;
+	}
+}
