@@ -4,8 +4,8 @@
 }
 .section-product__header {
 	background: url(../img/hero-mobile@1x.jpg) top center no-repeat;
-	height: 225px;
-	padding-top: 75px;
+	height: 210px;
+	padding-top: 70px;
 }
 .section-product__title {
 	color: $color-black;
@@ -15,13 +15,16 @@
 .section-product__menu {
 	list-style-type: none;
 }
+.section-product__menu.hidden {
+	display: none;
+}
 .section-product__link {
 	align-items: center;
 	display: flex;
 	color: $color-white;
 	@include font($font-bold, 19px);
 	justify-content: space-between;
-	height: 100px;
+	height: 105px;
 	padding: 0 25px;
 	svg {
 		fill: $color-greenIcon;
@@ -54,7 +57,7 @@
 	}
 	.section-product__title {
 		color: $color-black;
-		@include font($font-bold, 47px, 50px);		
+		@include font($font-bold, 43px, 50px);		
 		text-align: center; 
 	}	
 	.section-product__menu {
