@@ -3,33 +3,38 @@
 @import "global/mixin.scss";
 @import "normalize.scss";
  /*blocks*/
+ /*page*/
 @import "blocks/page.scss"; 
+/*header*/
 @import "blocks/header.scss";
+/*main-menu*/
 @import "blocks/main-menu.scss";
+/*section-product*/
 @import "blocks/section-product.scss";
-@import "blocks/main.scss";
+/*section-main-product*/
 @import "blocks/section-main-product.scss";
+/*header-for-blocks*/
 @import "blocks/header-for-blocks.scss";
+/*block-buttons*/
 @import "blocks/block-buttons.scss";
+/*block-about-us*/
 @import "blocks/block-about-us.scss";
+/*slider-comment*/
 @import "blocks/slider-comment.scss";
+/*contact*/
 @import "blocks/contact.scss";
+/*footer*/
 @import "blocks/footer.scss";
-@import "blocks/main-header.scss";
-@import "blocks/catalog.scss";
-
-
-@import "blocks/form.scss";
-
-
-
-
-
-@import "blocks/modal.scss";
-
-
-
-@import "blocks/size-group.scss";
-
+/*social*/
 @import "blocks/social.scss";
+/*main-header*/
+@import "blocks/main-header.scss";
+/*catalog*/
+@import "blocks/catalog.scss";
+/*video*/
 @import "blocks/video.scss";
+/*form*/
+@import "blocks/form.scss";
+/*modal*/
+@import "blocks/modal.scss";
+@import "blocks/size-group.scss";

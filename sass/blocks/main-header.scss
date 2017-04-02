@@ -1,19 +1,20 @@
 .section-product__header.main-header {
 	background: $color-lightgrayFon;
 	height: auto;
-	padding: 70px 0;
+	padding: 70px 0 75px;;
 }
 @media #{$width-tablet} {		
 	.section-product__header.main-header {
 		background: $color-lightgrayFon;
 		height: auto;
-		padding: 100px 0 80px; 
+		padding: 95px 0 60px; 
 	}
 }
 
 @media #{$width-desktop} {		
 	.section-product__header.main-header {
 		height: auto;
+		padding: 95px 0 80px; 
 	}
 }
 

@@ -1,5 +1,5 @@
 .block-about-us {
-	padding: 25px 25px 0;
+	padding: 30px 30px 25px;
 }
 .block-about-us__wrapper {
 	display: flex;
@@ -9,7 +9,7 @@
 	list-style-type: none;
 }
 .block-about-us__item {
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	svg {
 		fill: $color-leftgreen;
 		margin-bottom: 20px;
@@ -19,24 +19,28 @@
 		@include font($font-bold, 17px, 20px);
 	}
 }
-.block-buttons__button {
-	border: 1px solid $color-greyButton;
-	display: block;
-	@include font($font-bold, 18px, 25px);
-	padding: 25px;
-	text-align: center;
-	text-transform: uppercase; 
+.block-about-us__list:first-child .block-about-us__item:nth-of-type(1) svg {
+	margin-bottom: 10px;
+}
+.block-about-us__list:last-child .block-about-us__item:nth-of-type(1) svg {
+	margin-bottom: 10px;
+}
+.block-about-us__list:last-child .block-about-us__item:nth-of-type(2) svg {
+	margin-bottom: 25px;
+}
+.block-about-us__list:last-child .block-about-us__item:nth-of-type(3) svg {
+	margin-bottom: 15px;
 }
 
 @media #{$width-tablet} {	
 	.block-about-us {
-		padding: 50px 50px 0; 
+		padding: 50px 50px 30px; 
 	}	
 	.block-about-us__wrapper {
 		flex-direction: row;
 	}
 	.block-about-us__item {
-		margin: 0 25px 50px 0; 
+		margin: 0 25px 55px 0; 
 		p {
 			font-size: 20px;
 			line-height: 22px; 
@@ -44,12 +48,23 @@
 	}
 }
 @media #{$width-desktop} {	
+	.block-about-us {
+		padding: 60px 50px 40px; 
+	}
 	.block-about-us__wrapper {
 		flex-direction: row;
-		margin-left: 170px;
+		.block-about-us__list {
+			width: 50%;
+		}
+	}
+	.block-about-us__list:first-child li {
+		margin-left: 175px;
+	}
+	.block-about-us__list:last-child li {
+		margin-right: 175px;
 	}
 	.block-about-us__item {
-		margin: 0 25px 50px 0; 
+		margin: 0 25px 55px 0; 
 		p {
 			font-size: 20px;
 			line-height: 22px; 

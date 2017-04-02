@@ -1,39 +1,57 @@
 .slider-comment {
-	padiing-top: 25px;
+	padding: 0 30px 55px;
+	.header-for-blocks {
+		margin-bottom: 30px;
+	}
+	.block-buttons__button {
+		padding: 12px 10px 13px;
+	}
 }
 .slider-comment__text {
 	margin-bottom: 25px;
+	p {
+		@include font($font-regular, 15px, 30px);
+	}
 }
 .slider-comment__responded {
 	color: $color-black;
 	@include font($font-bold, 17px);
+}
+.slider-comment__nikname {
+	@include font($font-regular, 17px, 33px);
 }
 .slider-comment__buttons {
 	display: flex;
 	border: 1px solid $color-lightgrayBorder;
 	justify-content: center;
 	list-style-type: none;
-	margin-bottom: 25px;
+	margin: 30px 0 35px;
 }
 .slider-comment__button {
     width: 49.5%;
 }
 .slider-comment__prev, .slider-comment__next {
 	display: block;
-	padding: 20px;
+	padding: 11px 35px 8px;
 }
 .slider-comment__prev {
 	border-right: 1px solid $color-lightgrayBorder;
 }
 
 @media #{$width-tablet} {
-	.slider-comment {
-		background: url(../img/review@1x.jpg) 0 0 no-repeat;		
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 50px 0 0 50px;
+		.slider-comment {
+			background: url(../img/review@1x.jpg) 0 0 no-repeat;		
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		padding: 80px 50px 125px;
+		.header-for-blocks {
+			margin-bottom: 50px;
+		}
+		.block-buttons__button {
+			padding: 12px 40px 13px;
+		}
 	}	
 	.slider-comment__slider {
 		display: flex;
@@ -47,21 +65,37 @@
 		border: 1px solid $color-lightgrayBorder;
 		justify-content: center;
 		list-style-type: none;
-		margin-bottom: 25px;
+		margin: 0;
 	}
 	.slider-comment__button {
 		width: 49.5%; 
 	}
+	.slider-comment__text {
+		margin-bottom: 55px;
+	}
+	.slider-comment__nikname {
+		line-height: 37px;
+	}
 	.slider-comment__prev, .slider-comment__next {
 		display: block;
-		padding: 20px; 
+		padding: 15px 20px; 
 	}
 	.slider-comment__prev {
 		border-right: 1px solid $color-lightgrayBorder; 
 	}
 }
 @media #{$width-desktop} {
+	.slider-comment {
+		margin: 0 50px;
+		padding: 70px 0 175px;
+	}	
 	.slider-comment__slider {
-		margin-left: 170px;
+		margin-left: 175px;
+	}
+	.slider-comment__text {
+		margin-bottom: 40px;
+		p {
+			@include font($font-regular, 17px, 30px);
+		}
 	}
 }

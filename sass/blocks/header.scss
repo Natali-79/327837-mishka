@@ -1,7 +1,7 @@
 .header {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 .header__logo-img {
 	background: url(../img/logo-mobile.svg) left top no-repeat;
@@ -10,7 +10,8 @@
 	width: 90px;
 }
 .header__logo {
-  padding: 20px 0;
+	align-self: center;
+	padding: 20px 0;
 }
 
 @media #{$width-tablet} {
@@ -22,22 +23,20 @@
 		margin-left: 50px;
 	}
 	.header__logo {
-		padding: 20px 0;
+		align-self: center;
+		padding: 25px 0;
 		width: 100%;
 		z-index: 2;
 	}
 }
 @media #{$width-desktop} {
-	.header {
-		align-items: center;
-	}
 	.header__logo-img {
 		background: url(../img/logo-mobile.svg) left top no-repeat;
 		margin-left: 0;
 	}
 	.header__logo {
 		border-bottom: none;
-		padding: 20px 0;
+		padding: 24px 0;
 		width: auto;
 		z-index: 2;
 	}
