@@ -1,7 +1,7 @@
 .header-for-blocks {
 	color: $color-black;
 	@include font($font-bold, 25px);
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 }
 @media #{$width-tablet} {	
 	.header-for-blocks {
