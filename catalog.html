@@ -89,7 +89,11 @@
 				<li class="catalog__unit">
 					<div class="catalog__block1">
 						<a href="#" class="catalog__link">
-							<img class="catalog__product-img" src="img/photo-1-mobile@1x.jpg" alt="Фото товара">
+							<picture>
+								<source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg">
+								<source media="(min-width: 770px)" srcset="img/photo-1-tablet@1x.jpg. img/photo-1-tablet@2x.jpg">
+								<img class="catalog__product-img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="Фото товара">
+							</picture>
 						</a>
 					</div>	
 					<div class="catalog__product-wrapper">
@@ -116,7 +120,11 @@
 				<li class="catalog__unit">
 					<div class="catalog__block1">
 						<a href="#" class="catalog__link">
-							<img class="catalog__product-img" src="img/photo-2-mobile@1x.jpg" alt="Фото товара">
+							<picture>
+								<source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg">
+								<source media="(min-width: 770px)" srcset="img/photo-2-tablet@1x.jpg. img/photo-2-tablet@2x.jpg">
+								<img class="catalog__product-img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="Фото товара">
+							</picture>
 						</a>
 					</div>
 					<div class="catalog__product-wrapper">
@@ -143,7 +151,11 @@
 				<li class="catalog__unit">
 					<div class="catalog__block1">
 						<a href="#" class="catalog__link">
-							<img class="catalog__product-img" src="img/photo-2-mobile@1x.jpg" alt="Фото товара">
+							<picture>
+								<source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg">
+								<source media="(min-width: 770px)" srcset="img/photo-3-tablet@1x.jpg. img/photo-3-tablet@2x.jpg">
+								<img class="catalog__product-img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="Фото товара">
+							</picture>
 						</a>
 					</div>
 					<div class="catalog__product-wrapper">
@@ -179,7 +191,13 @@
 						</div>
 						<div class="video__figure">	
 							<a href="video" class="video__play">
-								<img src="img/video-mobile@1x.jpg" class="video__image-preview">							
+								
+								<picture>
+									<source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
+									<source media="(min-width: 770px)" srcset="img/video-tablet@1x.jpg. img/video-tablet@2x.jpg">
+									<img class="video__image-preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Фото товара">
+								</picture>
+															
 								<span class="video__image-play"><img src="img/icon-play.svg"></span>
 							</a>
 						</div>

@@ -19,7 +19,7 @@
 		align-items: flex-start;
 	}
 	.header__logo-img {
-		background: url(../img/logo-mobile.svg) left top no-repeat;
+		background: url(../img/logo-tablet.svg) left top no-repeat;
 		margin-left: 50px;
 	}
 	.header__logo {
@@ -31,7 +31,7 @@
 }
 @media #{$width-desktop} {
 	.header__logo-img {
-		background: url(../img/logo-mobile.svg) left top no-repeat;
+		background: url(../img/logo-desktop.svg) left top no-repeat;
 		margin-left: 0;
 	}
 	.header__logo {
